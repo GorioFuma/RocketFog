@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iscriviti alla Lista d'Attesa</title>
+    <!-- Carica il widget di LaunchList -->
+    <script src="https://getlaunchlist.com/js/widget.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2a2a28;
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            margin-top: 50px;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px auto;
+            max-width: 500px;
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        img {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-bottom: -10%;
+        }
+
+        /* Aggiungi lo stile per l'immagine del prodotto */
+        .product-image {
+            width: 90%;
+            height: auto;
+            max-width: 1000px; /* Limita la larghezza dell'immagine per schermi grandi */
+            margin: 20px auto;
+            margin-top: -10%;
+        }
+
+        /* Modifiche per il widget di iscrizione */
+        .launchlist-widget {
+            margin-top: 30px;
+        }
+
+        /* Responsive Design per la dimensione del logo su dispositivi mobili */
+        @media (max-width: 600px) {
+            img.logo {
+                max-width: 70%; /* Riduci la dimensione del logo sui dispositivi mobili */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="images/logotext.png" class="logo" style="max-width: 80%; height: auto;">
+
+    <h1>Iscriviti alla nostra lista d'attesa</h1>
+    <p>Rimani aggiornato! Inserisci la tua email per ricevere informazioni sul nostro lancio.</p>
+    
+    <!-- Widget di LaunchList -->
+    <div class="launchlist-widget" data-key-id="0uuD3H" data-height="180px"></div>
+
+    <!-- Immagine del prodotto -->
+    <img src="images/product.png" alt="Immagine del prodotto" class="product-image">
+
+    <footer>
+        © 2024 RocketFog | Tutti i diritti riservati.
+    </footer>
+</body>
+</html>
