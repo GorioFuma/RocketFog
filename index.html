@@ -17,7 +17,8 @@
         }
 
         h1 {
-            margin-top: 50px;
+            margin-top: 30px;
+            font-size: 2rem;
             color: #ffffff;
         }
 
@@ -34,36 +35,65 @@
             color: #888;
         }
 
-        img {
-            margin-top: 2%;
-            margin-bottom: -10%;
+        /* Stile per il logo */
+        img.logo {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: -2%;
         }
 
-        /* Aggiungi lo stile per l'immagine del prodotto */
+        /* Stile per l'immagine del prodotto */
         .product-image {
             width: 90%;
             height: auto;
-            max-width: 1000px; /* Limita la larghezza dell'immagine per schermi grandi */
+            max-width: 600px;
             margin: 20px auto;
-            margin-top: -10%;
         }
 
         /* Modifiche per il widget di iscrizione */
         .launchlist-widget {
-            margin-top: 30px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 400px;
+            margin-bottom: -5%;
         }
 
-        /* Responsive Design per la dimensione del logo su dispositivi mobili */
-        @media (max-width: 600px) {
+        /* Responsive Design per schermi più grandi */
+        @media (min-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
             img.logo {
-                max-width: 70%; /* Riduci la dimensione del logo sui dispositivi mobili */
+                max-width: 30%;
+                margin-bottom: -2%;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            .product-image {
+                width: 60%;
+                max-width: 600px;
+            }
+
+            .launchlist-widget {
+                margin: 20px auto;
+                width: 50%;
+                max-width: 500px;
+                margin-bottom: -5%;
             }
         }
     </style>
 </head>
 <body>
     <!-- Logo -->
-    <img src="images/logotext.png" class="logo" style="max-width: 80%; height: auto;">
+    <img src="images/logotext.png" class="logo" alt="Logo RocketFog">
 
     <h1>Iscriviti alla nostra lista d'attesa</h1>
     <p>Rimani aggiornato! Inserisci la tua email per ricevere informazioni sul nostro lancio.</p>
